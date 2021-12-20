@@ -1,0 +1,117 @@
+/*layout*/
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(fondo2.png);
+  background-size: 120%;
+  margin: 0;
+  min height: 100vh;
+  width: 100%;
+  }
+
+/* header*/ 
+header {
+  padding: 0px;
+  text-align: left;
+  font-size: 50px;
+  color: purple;
+}
+
+label {
+   display:inline-block;    
+   width: 100px;
+	
+}
+
+nav.menu {
+  opacity: 1;
+  visibility: visible;
+
+  background: var(--body-color);
+
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  place-content: center;
+}
+
+nav.show .menu ul {
+  display: grid;
+}
+
+nav.show ul.grid {
+  gap: 4rem;
+}
+
+/* Style the content */
+article
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #d1c9cc;
+  padding: 70px;
+}
+
+/* Style the footer */
+  footer{
+  background-color: #999;
+  padding-left: 20px;
+  padding: left;
+  text-align: center;
+  color: white;
+  }
+
+/*horizontal*/
+
+ul#menu {
+  list-style-type: none;
+  margin: 30;
+  padding: 20;
+  overflow: hidden;
+  background-color: #9878;
+}
+
+ul#menu li {
+  float: left;
+}
+
+ul#menu li a.active { 
+  background-color:#Q4AA6D;
+  color: black;
+}
+
+ul#menu li a {
+  display: block;
+  color: fuchsia;
+  text-align: center;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+ul#menu li a:hover {
+  background-color: #111;
+  color: pink;
+}
+
+/*formulario*/
+
+input[type=text] , input[type=data], input[type=number], input[type=code], input[type=tel],  input[type=password], select {
+  width: 80%;
+  padding: 8px 20px;
+  margin: 10px 0px;
+}
+input[type=submit]{
+	background-color:white;
+	border: none;
+	color: black;
+	padding: 8px 30px;
+	margin:40px 0;
+}
